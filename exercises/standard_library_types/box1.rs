@@ -32,11 +32,11 @@ fn main() {
 }
 
 pub fn create_empty_list() -> List {
-    return Nil;
+    return List::Nil;
 }
 
 pub fn create_non_empty_list() -> List {
-    return Cons(33,Box::new(Cons(22,Box::new(Nil))))
+    return List::Cons(33,Box::new(List::Cons(22,Box::new(List::Nil))))
 }
 
 #[cfg(test)]
